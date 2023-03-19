@@ -1,8 +1,11 @@
 import Card from './layout/Card';
-import Primeiro from './Primeiro';
+import Primeiro from './basicos/Primeiro';
 import './App.css';
-import ComParametros from './ComParametros';
-import ComFilhos from './ComFilhos';
+import ComParametros from './basicos/ComParametros';
+import ComFilhos from './basicos/ComFilhos';
+import Repeticao from './basicos/Repeticao';
+import Condicional from './basicos/Condicional';
+import CondiconalComIf from './basicos/CondiconalComIf';
 
 export default props => (
   <div className="App">
@@ -24,6 +27,15 @@ export default props => (
           <li>Daniel</li>
         </ul>
       </ComFilhos>
+    </Card>
+    <Card titulo="#4 - Exercicio de repetiçao">
+      <Repeticao></Repeticao>
+    </Card>
+    <Card titulo="#5 - Exercicio de Condicional  v01">
+      <Condicional numero={11}></Condicional>
+    </Card>
+    <Card titulo="#6 - Exercicio de Condicional  v02">
+      <CondiconalComIf numero={22}></CondiconalComIf>
     </Card>
   </div>
 );
