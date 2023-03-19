@@ -8,7 +8,7 @@ import Condicional from './components/basicos/Condicional';
 import CondiconalComIf from './components/basicos/CondiconalComIf';
 import Pai from './components/comunicacao/direta/Pai';
 import Super from './components/comunicacao/indireta/Super';
-
+import Input from './components/form/Input';
 export default props => (
   <div className="App">
     <Card titulo=" #01 - Exemplo do Primeiro Componente" color="#FA6900">
@@ -46,8 +46,11 @@ export default props => (
     <Card titulo="#7 - Comunicação direta" color="#920">
       <Pai sobrenome="Freitas"></Pai>
     </Card>
-    <Card titulo="# - Comunicação Indireta" color="#000">
+    <Card titulo="#8 - Comunicação Indireta" color="#4d0099">
       <Super></Super>
+    </Card>
+    <Card titulo="#9 - Input" color="#6497b0">
+      <Input></Input>
     </Card>
   </div>
 );
