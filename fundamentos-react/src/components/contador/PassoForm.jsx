@@ -1,6 +1,6 @@
 export default props => (
   <div>
-    <label for="passoInput"> Passos: </label>
+    <label htmlFor="passoInput"> Passos: </label>
     <input
       id="passoInput"
       type="number"
